@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+}
+
+.traffic-light-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    font-size: 2em;
+    color: red; /* Timer text color */
+    margin-bottom: 20px;
+    margin-top: 20px; /* Added padding on top */
+    font-family: Arial, sans-serif;
+    padding: 10px 20px; /* Padding around the timer number */
+    background-color: black; /* Same color as the base of the traffic light */
+    border-radius: 5px; /* Rounded corners for the rectangle */
+}
+
+.traffic-light {
+    width: 100px;
+    height: 280px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
